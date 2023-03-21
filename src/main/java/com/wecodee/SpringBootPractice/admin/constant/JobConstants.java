@@ -1,0 +1,26 @@
+package com.wecodee.SpringBootPractice.admin.constant;
+
+public enum JobConstants {
+
+	 EMAIL_JOB("EMAIL"),
+	    SMS_JOB("SMS"),
+	    CUSTOMERDATASYNC_JOB("CUSTOMERDATASYNC"),
+	    NOTIFICATION_GROUP_JOB("NOTIFICATION_GROUP"),
+	    CUSTOMERJOURNEY("CUSTOMERJOURNEY"),
+	    BULK_NOTIFICATION_JOB("BULKNOTIFICATION"),
+	    CUSTOMER_NOTIFICATION_INSTANT("CUSTOMERNOTIFICATIONINSTANT"),
+	    CUSTOMER_NOTIFICATION_DAILY("CUSTOMERNOTIFICATIONDAILY"),
+	    CUSTOMER_NOTIFICATION_PERIODIC("CUSTOMERNOTIFICATIONPERIODIC"),
+	    CUSTOMER_NOTIFICATION_MONTHLY("CUSTOMERNOTIFICATIONMONTHLY"),
+	    REPORT_JOB("REPORT_JOB");
+
+	    private String value;
+
+	    public String getValue() {
+	        return value;
+	    }
+
+	    private JobConstants(String value) {
+	        this.value = value;
+	    }
+}
